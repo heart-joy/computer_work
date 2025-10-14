@@ -4,10 +4,10 @@ int main()
 {
   int n;
   int h, m;
-  printf("ÇëÊäÈë·ÖÖÓÊın:");
+  printf("è¯·è¾“å…¥åˆ†é’Ÿæ•°n:");
   scanf("%d", &n);
   h = n / 60;
   m = n % 60;
-  printf("%d·ÖÖÓ¿É»»ËãÎª£º%dĞ¡Ê±%d·ÖÖÓ\n", n, h, m);
+  printf("%dåˆ†é’Ÿå¯æ¢ç®—ä¸ºï¼š%då°æ—¶%dåˆ†é’Ÿ\n", n, h, m);
   return 0;
 }

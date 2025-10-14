@@ -5,9 +5,9 @@ const dl profit = 0.034;
 int main()
 {
     dl money, total;
-    printf("ÇëÊäÈë´æ¿î±¾½ğ£¨Ôª):");
+    printf("è¯·è¾“å…¥å­˜æ¬¾æœ¬é‡‘ï¼ˆå…ƒ):");
     scanf("%lf", &money);
     total = money * (1 + profit * 3);
-    printf("ÈıÄêºó´æ¿îµÄ±¾Ï¢ºÏ¼ÆÎª: %.2lfÔª\n",total);
+    printf("ä¸‰å¹´åå­˜æ¬¾çš„æœ¬æ¯åˆè®¡ä¸º: %.2lfå…ƒ\n",total);
     return 0;
 }

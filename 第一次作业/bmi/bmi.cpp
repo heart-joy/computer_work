@@ -3,11 +3,11 @@ using namespace std;
 int main() 
 {
     double weight, height, bmi;
-    printf("ÇëÊäÈëÌåÖØ£¨¹«½ï):");
+    printf("è¯·è¾“å…¥ä½“é‡ï¼ˆå…¬æ–¤):");
     scanf("%lf", &weight);
-    printf("ÇëÊäÈëÉí¸ß£¨Ã×):");
+    printf("è¯·è¾“å…¥èº«é«˜ï¼ˆç±³):");
     scanf("%lf", &height);
     bmi = weight / (height * height);
-    printf("´ËÈËµÄÉíÌåÖÊÁ¿Ö¸ÊıÎª: %.2lf kg/m^2\n", bmi);
+    printf("æ­¤äººçš„èº«ä½“è´¨é‡æŒ‡æ•°ä¸º: %.2lf kg/m^2\n", bmi);
     return 0;
 }
