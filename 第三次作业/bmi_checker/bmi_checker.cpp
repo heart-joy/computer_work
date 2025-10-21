@@ -1,37 +1,40 @@
 #include <iostream>
-#define double dl
+#define dl double
 using namespace std;
 
 int main()
 {
   dl bmi;
   int height, weight;
-  printf("è¯·è¾“å…¥ä½“é‡ï¼ˆå…¬æ–¤ï¼‰:");
+  printf("ÇëÊäÈëÌåÖØ£¨¹«½ï£©:");
   scanf("%d", &weight);
-  printf("è¯·è¾“å…¥èº«é«˜ï¼ˆå˜ç±³ï¼‰:");
+  printf("ÇëÊäÈëÉí¸ß£¨ÀåÃ×£©:");
   scanf("%d", &height);
   bmi = weight / ((height / 100.0) * (height / 100.0));
   printf("BMI=%.2f,", bmi);
-  switch(bmi)
+  if(bmi < 18.5)
   {
-    case bmi < 18.5:
-      printf("åç˜¦!\n");
-      break;
-    case bmi >= 18.5 && bmi < 24.0:
-      printf("æ­£å¸¸!\n");
-      break;
-    case bmi >= 24.0 && bmi < 27.0:
-      printf("åèƒ–!\n");
-      break;
-    case bmi >= 27.0 && bmi < 30.0:
-      printf("è‚¥èƒ–!\n");
-      break;
-    case bmi >= 30.0 && bmi < 40.0:
-      printf("é‡åº¦è‚¥èƒ–!\n");
-      break;
-    case bmi >= 40.0:
-      printf("æé‡åº¦è‚¥èƒ–!\n");
-      break;
+    printf("Æ«Êİ!\n");
+  }
+  else if(bmi >= 18.5 && bmi < 24)
+  {
+    printf("Õı³£!\n");
+  }
+  else if(bmi >= 24 && bmi < 27)
+  {
+    printf("Æ«ÅÖ!\n");
+  }
+  else if(bmi >= 27 && bmi < 30)
+  {
+    printf("·ÊÅÖ!\n");
+  }
+  else if(bmi >= 30 && bmi < 40)
+  {
+    printf("ÖØ¶È·ÊÅÖ!\n");
+  }
+  else
+  {
+    printf("¼«ÖØ¶È·ÊÅÖ!\n");
   }
   return 0;
 }
