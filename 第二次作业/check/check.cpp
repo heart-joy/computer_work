@@ -4,15 +4,15 @@ using namespace std;
 int main()
 {
   char ch;
-  printf("ÇëÊäÈëÒ»¸ö×Ö·û:");
+  printf("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦:");
   scanf("%c", &ch);
   if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
   {
-    printf("ÊäÈëµÄ×Ö·û%cÊÇÓ¢ÎÄ×ÖÄ¸\n", ch);
+    printf("è¾“å…¥çš„å­—ç¬¦%cæ˜¯è‹±æ–‡å­—æ¯\n", ch);
   }
   else
   {
-    printf("ÊäÈëµÄ×Ö·û%c²»ÊÇÓ¢ÎÄ×ÖÄ¸\n", ch);
+    printf("è¾“å…¥çš„å­—ç¬¦%cä¸æ˜¯è‹±æ–‡å­—æ¯\n", ch);
   }
   return 0;
 }
